@@ -1,0 +1,137 @@
+.introducao{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    padding: 40px 20px;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+
+}
+
+.introducao h1{
+    font-size: 3.75rem;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#img_logo{
+    max-width: 100%;
+}
+.introducao h1::before{
+    content: '';
+    background: linear-gradient(#117035, #19A74F);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 4px;
+    top: 10px;
+    left: -2px;
+    display: block;
+}
+
+.introducao p{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: #525252;
+}
+
+.introducao ul{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.introducao ul::after{
+    content: '';
+    background: #121212;
+    width: 1200px;
+    height: 3px;
+    position: absolute;
+    top: 200px;
+    left: -2px;
+    display: block;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    .introducao{
+        margin-top: 100px;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 0px;
+        justify-items: center;
+        width: 800px;
+        gap: 50px;
+    }
+    #img_logo{
+        grid-row: 1;
+        width: 50%;
+    }
+    .introducao ul::after{
+        content: '';
+        background: #121212;
+        width: 400px;
+        height: 3px;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 450px){
+    .introducao{
+        margin-top: 0px;
+        width: 1200px;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        gap: 0px;
+        justify-items: self-start;
+    }
+    .introducao h1{
+        font-size: 2.5rem;
+        line-height: 1.3;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    #img_logo{
+        display: none;
+    }
+    .introducao ul::after{
+        width: 300px;
+        top: 80px;
+    }
+    .introducao h1::before{
+        content: '';
+        background: linear-gradient(#117035, #19A74F);
+        width: 30px;
+        height: 3px;
+        position: absolute;
+        z-index: -1;
+        border-radius: 4px;
+        top: 50px;
+        left: -2px;
+        display: block;
+    }
+}
+@media (max-width: 320px){
+    .introducao h1{
+        font-size: 2rem;
+    }
+    .introducao p{
+        font-size: 1rem;
+    }
+    .introducao h1::before{
+        display: none;
+    }
+    .introducao ul::after{
+        width: 250px;
+    }
+}
+
