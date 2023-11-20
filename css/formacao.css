@@ -127,6 +127,9 @@
         justify-items: center;
         width: auto;
     }
+    #formacao_color{
+        width: auto;
+    }
     #formacao_h1{
         font-size: 3rem;
     }
