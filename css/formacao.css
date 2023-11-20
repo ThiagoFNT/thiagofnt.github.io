@@ -101,7 +101,10 @@
 
 @media (max-width: 900px){
     .formacao{
-        width: 100%;
+        width: 800px;
+    }
+    #formacao_color{
+        width: 885px;
     }
     .formacao p{
         width: 300px;
@@ -122,7 +125,7 @@
         grid-template-columns: 1fr;
         gap: 40px;
         justify-items: center;
-        width: 350px;
+        width: auto;
     }
     #formacao_h1{
         font-size: 3rem;
@@ -175,5 +178,18 @@
 @media (max-width: 360px){
     .formacao{
         width: 300px;
+    }
+    #formacao_color{
+        width: auto;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 320px){
+    #formacao_p{
+        width: 250px;
+    }
+    .formacao_div{
+        width: 170px;
     }
 }

@@ -98,15 +98,17 @@
 
 @media (max-width: 900px){
     .projetos{
-        width: 100%;
+        width: 800px;
+        margin: 0 auto;
     }
 
 }   
 
 @media (max-width: 450px){
     .projetos{
-        left: 20px;
-        justify-content: flex-start;
+        left: 0px;
+        justify-content: start;
+        width: 300px;
     }
     .projetos_main{
         width: 300px;
@@ -148,7 +150,10 @@
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 360px){
+    .projetos{
+        width: 300px;
+    }
     #projetos_h1{
         justify-content: start;
         font-size: 0.9rem;
@@ -157,5 +162,12 @@
         display: flex;
         gap: 20px;
         justify-content: start;
+    }
+}
+
+@media (max-width: 320px){
+    .projetos{
+        width: 250px;
+        overflow: hidden;
     }
 }

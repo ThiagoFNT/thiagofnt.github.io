@@ -40,6 +40,7 @@
     .footer_container{
         grid-template-columns: 1fr;
         gap: 50px;
+        width: auto;
     }
     .footer_texto{
         font-size: 1rem;
@@ -49,5 +50,14 @@
     }
     .footer_copy{
         font-size: 1rem;
+    }
+    .footer{
+        width: auto;
+        overflow: hidden;
+    }
+}
+@media (max-width: 320px){
+    .footer_contato li{
+        font-size: 0.8rem;
     }
 }
